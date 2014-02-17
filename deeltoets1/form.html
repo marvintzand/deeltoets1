@@ -26,7 +26,7 @@
                 Voor vragen of opmerkingen kunt u <a href="mailtio:contact@contact.nl">contact</a> met ons op.
             </p>
       	</article>
-  		<form action="" id="apply_form" method="post">
+  		<form action="form.html" id="apply_form" method="post">
 			<label>Naam: <input type="text" name="naam" /></label><br />
 			<label>Bedrijf: <input type="text" name="bedrijf" /></label><br />	
 			<label>Adres: <input type="text" name="adres" /></label><br />
@@ -51,11 +51,11 @@
                 <p>
                 	<label>Geschikt voor: <input list="project_jaar" placeholder="Dubbel klik" /></label>
                 	<datalist id="project_jaar">
-                    	<option value="Eerstejaars studenten"></option>
-                        <option value="Tweedejaars studenten"></option>
-                        <option value="Derdejaars studenten"></option>
-                        <option value="Afstudeer studenten"></option>
-                        <option value="Onbekend"></option>
+                    	<option value="Eerstejaars studenten">Eerstejaars studenten</option>
+                        <option value="Tweedejaars studenten">Tweedejaars studenten</option>
+                        <option value="Derdejaars studenten">Derdejaars studenten</option>
+                        <option value="Afstudeer studenten">Afstudeer studenten</option>
+                        <option value="Onbekend">Onbekend</option>
                     </datalist>    
                 </p>
                 <p>
@@ -68,17 +68,17 @@
                 <p>
                		<label>Geschikt voor: <input list="stage_jaar" placeholder="Dubbel klik" /></label><br />
                 	<datalist id="stage_jaar">
-                        <option value="Tweedejaars studenten"></option>
-                        <option value="Afstudeer studenten"></option>
-                        <option value="Onbekend"></option>
+                        <option value="Tweedejaars studenten">Tweedejaars studenten</option>
+                        <option value="Afstudeer studenten">Afstudeer studenten</option>
+                        <option value="Onbekend">Onbekend</option>
                     </datalist>    
                     
-                    <label>Hoe lang is de stage? <input list="stage_duur" placeholder="Dubbel klik" /><br />
+                    <label>Hoe lang is de stage? <input list="stage_duur" placeholder="Dubbel klik" /></label><br />
                     <datalist id="stage_duur">
-                        <option value="10 weken"></option>
-                        <option value="20 weken"></option>
+                        <option value="10 weken">10 weken</option>
+                        <option value="20 weken">20 weken</option>
                     </datalist>   
-                    	<label>Begin datum: <input type="date" /></label>
+                    <label>Begin datum: <input type="date" /></label>
                 </p>
                 <label>Beschrijving werkzaamheden: <br /><textarea id="stage_werkzaamheden"></textarea></label>
                 
