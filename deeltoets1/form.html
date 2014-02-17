@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opleidingen</title>
+    <meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="tab.js"></script>
+</head>
+<body>
+	<section>
+    	<h1>Aanmelden</h1>
+        <article>
+        	<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+        	  Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+       	    lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+            <blockquote>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+            Amsterdam.</blockquote>
+            <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+              Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+            Voor vragen of opmerkingen kunt u <a href="mailtio:contact@contact.nl">contact</a> met ons op.</p>
+      	</article>
+      		<form action="" id="apply_form" method="post">
+				<label>Naam: <input type="text" name="naam" /></label><br />
+				<label>Bedrijf: <input type="text" name="bedrijf" /></label><br />	
+				<label>Adres: <input type="text" name="adres" /></label><br />
+				<label>Postcode: <input type="text" name="postcode" /></label><br />
+				<label>Plaats: <input type="text" name="plaats" /></label><br />
+				<label>Telefoon: <input type="tel" name="telefoon" /></label><br />
+				<label>Email: <input type="email" name="email" /></label>
+                
+                <p>Ik wil mij aanmelden:</p>
+                
+                <input type="radio" name="aanmelden" value="project" checked /> Voor een project<br />
+                <input type="radio" name="aanmelden" value="stage"/> Als stagebedrijf
+                
+                	<div class="tab" data-period="project">
+                    	<label>Titel: <input type="text" name="titel" /></label><br />
+                        <label>Opdrachtomschrijving: <textarea id="project_opdracht"></textarea></label><br />
+                        <label>Doelgroepomschrijving: <textarea id="project_doelgroep"></textarea></label><br />
+                        <label>Doelstelling/intentie van project: <textarea id="doelstelling"></textarea></label><br />
+                        <label>Looptijd: <input type="number" name="weken" /> weken</label><br />
+                        <label>Deadline: <input type="date" name="deadline" /></label>
+                        
+                    <p>
+                    	<label>Geschikt voor: <input list="project_jaar" placeholder="Dubbel klik" /></label>
+                    	<datalist id="project_jaar">
+                        	<option value="Eerstejaars studenten"></option>
+                            <option value="Tweedejaars studenten"></option>
+                            <option value="Derdejaars studenten"></option>
+                            <option value="Afstudeer studenten"></option>
+                            <option value="Onbekend"></option>
+                        </datalist>    
+                    </p>
+                    <p>
+                    	<label>Opmerking: <br /><textarea id="project_opmerking"></textarea></label>
+                    </p>
+                    <button type="submit" value="Aanmelden" form="apply_form">Aanmelden</button>
+                    </div>
+                    
+                    <div class="tab" data-period="stage" >
+                    <p>
+                   		<label>Geschikt voor: <input list="stage_jaar" placeholder="Dubbel klik" /></label><br />
+                    	<datalist id="stage_jaar">
+                            <option value="Tweedejaars studenten"></option>
+                            <option value="Afstudeer studenten"></option>
+                            <option value="Onbekend"></option>
+                        </datalist>    
+                        
+                        <label>Hoe lang is de stage? <input list="stage_duur" placeholder="Dubbel klik" /><br />
+                        <datalist id="stage_duur">
+                            <option value="10 weken"></option>
+                            <option value="20 weken"></option>
+                        </datalist>   
+                        	<label>Begin datum: <input type="date" /></label>
+                    </p>
+                    <label>Beschrijving werkzaamheden: <br /><textarea id="stage_werkzaamheden"></textarea></label>
+                    
+                    <p>
+                    	Beschrijving stagebedrijf:
+                        <label>Bedrijfsnaam: <input type="text" name="bedrijfsnaam" /></label><br />
+                        <label>Adres: <input type="text" name="adres" /></label><br />
+                        <label>Postcode: <input type="text" name="postcode" /></label><br />
+                        <label>Plaats: <input type="text" name="plaats" /></label><br />
+                        <label>Sector: <input type="text" name="sector" /></label><br />
+                        <label>Core Business: <input type="text" name="core_business" /></label>
+                    </p>
+                    <p>
+                    	<label>Opmerking: <br /><textarea id="stage_opmerking"></textarea></label>
+                    </p>
+                    <button type="submit" value="Aanmelden" form="apply_form">Aanmelden</button>
+                    </div>
+      		</form>
+    </section>
+</body>
+</html>
